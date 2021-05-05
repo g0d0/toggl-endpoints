@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from toggl import toggl
+from endpoints.toggl import toggl
 
 def request_json(method, route, params={}, *argv):
     response = toggl(method=method, route=route, params=params,).json()
