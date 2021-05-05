@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from endpoints.request import request_json
 
 """

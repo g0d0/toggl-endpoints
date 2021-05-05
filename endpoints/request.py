@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from toggl import toggl
 
 def request_json(method, route, params={}, *argv):

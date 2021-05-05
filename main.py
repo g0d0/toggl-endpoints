@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from endpoints.me import get_workspaces
 from endpoints.me import me
 from endpoints.time_entries import time_entries_in_period
