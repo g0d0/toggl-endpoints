@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from os import getenv
+
 """
 toggl
 =======
@@ -18,5 +20,6 @@ def toggl(method, route, params={}):
 
     Viabiliza a comunicação mais básica com quaisquers endpoints da API Toggl
     """
-    auth = HTTPBasicAuth('antoniomquadrosfilho@gmail.com', 'xpto@1234')
-    return request(method=method, url='https://api.track.toggl.com/api/v8/' + route, auth=auth)
+
+    auth = HTTPBasicAuth(getenv('APP_API_USERNAME'), getenv('APP_API_PASSWORD'))
+    return request(method=method, url=getenv('APP_API_URL') + route, auth=auth)
