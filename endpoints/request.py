@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from endpoints.toggl import toggl
 
 def request_json(method, route, params={}, *argv):
